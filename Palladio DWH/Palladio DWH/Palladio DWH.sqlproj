@@ -62,6 +62,7 @@
     <Folder Include="dbo\Post Deployment" />
     <Folder Include="Staging" />
     <Folder Include="Staging\Tables" />
+    <Folder Include="Staging\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\dimDate.sql" />
@@ -77,6 +78,10 @@
     <None Include="dbo\Post Deployment\InsertPaymentMethod.sql" />
     <PostDeploy Include="dbo\Post Deployment\Main.PostDeployment.sql" />
     <Build Include="Staging\STG.sql" />
+    <Build Include="Staging\Tables\StagefactPayments.sql" />
+    <Build Include="Staging\Tables\RejectedFactPayments.sql" />
+    <Build Include="Staging\Stored Procedures\ProcessfactPaymentsStage.sql" />
+    <Build Include="dbo\Tables\ErrorTable.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Palladio DWH.publish.xml" />
