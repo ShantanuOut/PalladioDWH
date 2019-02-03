@@ -85,5 +85,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Palladio DWH.publish.xml" />
+    <None Include="Palladio DWH_1.publish.xml" />
   </ItemGroup>
 </Project>
