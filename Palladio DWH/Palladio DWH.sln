@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Palladio DWH", "Palladio DWH\Palladio DWH.sqlproj", "{8A7208A5-18C0-4059-B617-8C92C710B255}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A7208A5-18C0-4059-B617-8C92C710B255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A7208A5-18C0-4059-B617-8C92C710B255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A7208A5-18C0-4059-B617-8C92C710B255}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8A7208A5-18C0-4059-B617-8C92C710B255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A7208A5-18C0-4059-B617-8C92C710B255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A7208A5-18C0-4059-B617-8C92C710B255}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F74E5B2-E9BB-4AF2-B706-84FAF1F12C10}
+	EndGlobalSection
+EndGlobal
