@@ -4,6 +4,8 @@ BEGIN
 	VALUES ('Agreement Cost'),
 			('GST'),
 			('Maintainance Cost'),
-			('Stamp Duty & Registration'),
-			('Registration')
+			('Stamp Duty'),
+			('Registration'),
+			('Agreement Registration'),
+			('TDS')
 END

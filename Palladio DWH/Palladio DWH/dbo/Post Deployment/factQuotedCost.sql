@@ -9,9 +9,11 @@ BEGIN
 			 THEN 338601
 			 WHEN 'Maintainance Cost'
 			 THEN 125000
-			 WHEN 'Stamp Duty & Registration'
-			 THEN 368700
+			 WHEN 'Stamp Duty'
+			 THEN 338700
 			 WHEN 'Registration'
+			 THEN 30000
+			 WHEN 'Agreement Registration'
 			 THEN 5000
 			 ELSE 0
 		END

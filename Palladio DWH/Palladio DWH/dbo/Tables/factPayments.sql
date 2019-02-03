@@ -5,7 +5,8 @@
 	PaymentMethodTypeId		INT NOT NULL,
 	PayeeId					INT NOT NULL,
 	Amount					MONEY NOT NULL,
-	ChequeNumber			VARCHAR(50) NULL
+	ChequeNumber			VARCHAR(50) NULL,
+	DrawnOn					VARCHAR(100) NULL,
 	CONSTRAINT PK_factPayments_Com PRIMARY KEY CLUSTERED(DateKeyId, PaymentTypeId, PaymentMethodTypeId, PayeeId), 
     CONSTRAINT [FK_factPayments_DimDate] FOREIGN KEY (DateKeyId) REFERENCES dimDate(DateKeyId), 
     CONSTRAINT [FK_factPayments_DimPaymentType] FOREIGN KEY (PaymentTypeId) REFERENCES dimPaymentType(PaymentTypeId), 
