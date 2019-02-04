@@ -63,6 +63,7 @@
     <Folder Include="Staging" />
     <Folder Include="Staging\Tables" />
     <Folder Include="Staging\Stored Procedures" />
+    <Folder Include="dbo\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\dimDate.sql" />
@@ -82,9 +83,10 @@
     <Build Include="Staging\Tables\RejectedFactPayments.sql" />
     <Build Include="Staging\Stored Procedures\ProcessfactPaymentsStage.sql" />
     <Build Include="dbo\Tables\ErrorTable.sql" />
+    <Build Include="dbo\Stored Procedures\rptGetQuotedCost.sql" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Palladio DWH UnitTest.publish.xml" />
     <None Include="Palladio DWH.publish.xml" />
-    <None Include="Palladio DWH_1.publish.xml" />
   </ItemGroup>
 </Project>
