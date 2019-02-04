@@ -1,0 +1,5 @@
+﻿IF NOT EXISTS (SELECT TOP 1 1 FROM dbo.ControlTotal)
+BEGIN
+	INSERT INTO dbo.ControlTotal
+	VALUES ('GST', '6', 1)
+END

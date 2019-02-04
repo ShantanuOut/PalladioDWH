@@ -9,8 +9,10 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
+:r .\InsrtCotrolTotals.sql
 :r .\InsertDimDate.sql
 :r .\InsertDimPayee.sql
 :r .\InsertDimPaymentType.sql
 :r .\InsertPaymentMethod.sql
 :r .\factQuotedCost.sql
+:r .\InsertdimPaymentSchedule.sql

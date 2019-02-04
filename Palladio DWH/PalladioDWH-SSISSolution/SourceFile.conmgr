@@ -23,7 +23,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Date"
-          DTS:DTSID="{EB844671-04AA-4BE0-B746-92DD8992719E}"
+          DTS:DTSID="{A2985CB4-F17A-4690-9298-FC1CC9C70ADE}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -32,7 +32,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Payment"
-          DTS:DTSID="{31A8303A-2554-4366-B6B4-F4F9D688F915}"
+          DTS:DTSID="{3F8E96AB-8A1C-48F2-808C-07D4D5A203A0}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -41,7 +41,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="towards"
-          DTS:DTSID="{5A693410-7B8A-42DC-A57B-59FAFF4139C8}"
+          DTS:DTSID="{61E93FF1-A9D5-4683-8C5C-83E7C203F93A}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -50,7 +50,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="cheque"
-          DTS:DTSID="{527F6445-6B38-4951-BDFA-96A065D0B392}"
+          DTS:DTSID="{22206868-A7A2-492C-A691-D6A5283F0CAD}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -59,7 +59,16 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="DrawnOn"
-          DTS:DTSID="{F161A788-6CEC-4968-BA92-114A15271290}"
+          DTS:DTSID="{D9F6191D-C1AD-4053-9DFF-147C67BB86E7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="FinancedBy"
+          DTS:DTSID="{597DC1B6-83AA-4D8A-B2E6-0FE70A1F8DDC}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -67,8 +76,8 @@
           DTS:MaximumWidth="50"
           DTS:DataType="129"
           DTS:TextQualified="True"
-          DTS:ObjectName="FinancedBy"
-          DTS:DTSID="{B13ED53D-14A7-44AF-9E93-49A7DA4BC9F6}"
+          DTS:ObjectName="Schedule"
+          DTS:DTSID="{B3516570-B91D-43BE-982F-572A87EA5347}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

@@ -5,5 +5,6 @@
 	towards			VARCHAR(100),
 	Cheque			VARCHAR(50),
 	DrawnOn			VARCHAR(100),
-	FinancedBy		VARCHAR(50)	
+	FinancedBy		VARCHAR(50),
+	Schedule		VARCHAR(200)
 )

@@ -31,4 +31,10 @@ BEGIN
 						 )
 	FROM STG.StagefactPayments sfp
 
+	UPDATE sfp
+	SET PaymentScheduleId = dps.PaymentScheduleId
+	FROM STG.StageFactPayments sfp
+	INNER JOIN dbo.dimPaymentSchedule dps
+		ON sfp.Schedule = dps.StageCompletion
+
 END

@@ -64,6 +64,8 @@
     <Folder Include="Staging\Tables" />
     <Folder Include="Staging\Stored Procedures" />
     <Folder Include="dbo\Stored Procedures" />
+    <Folder Include="dbo\Functions" />
+    <Folder Include="dbo\Functions\Scalar Function" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\dimDate.sql" />
@@ -84,9 +86,15 @@
     <Build Include="Staging\Stored Procedures\ProcessfactPaymentsStage.sql" />
     <Build Include="dbo\Tables\ErrorTable.sql" />
     <Build Include="dbo\Stored Procedures\rptGetQuotedCost.sql" />
+    <Build Include="dbo\Tables\dimPaymentSchedule.sql" />
+    <Build Include="dbo\Tables\ControlTotal.sql" />
+    <Build Include="dbo\Functions\Scalar Function\fnGetPartAgreementCost.sql" />
+    <Build Include="dbo\Functions\Scalar Function\fnCalculateGST.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Palladio DWH UnitTest.publish.xml" />
     <None Include="Palladio DWH.publish.xml" />
+    <None Include="dbo\Post Deployment\InsrtCotrolTotals.sql" />
+    <None Include="dbo\Post Deployment\InsertdimPaymentSchedule.sql" />
   </ItemGroup>
 </Project>
