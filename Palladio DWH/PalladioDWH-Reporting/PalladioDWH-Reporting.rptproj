@@ -55,6 +55,7 @@
     <Report Include="QuotedCost.rdl" />
     <Report Include="QuotedCostGraphical.rdl" />
     <Report Include="QuotedCostReportComplete.rdl" />
+    <Report Include="SelfPayments.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

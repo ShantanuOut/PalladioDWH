@@ -90,6 +90,7 @@
     <Build Include="dbo\Tables\ControlTotal.sql" />
     <Build Include="dbo\Functions\Scalar Function\fnGetPartAgreementCost.sql" />
     <Build Include="dbo\Functions\Scalar Function\fnCalculateGST.sql" />
+    <Build Include="dbo\Stored Procedures\rptGetSelfPaymentDetails.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Palladio DWH UnitTest.publish.xml" />

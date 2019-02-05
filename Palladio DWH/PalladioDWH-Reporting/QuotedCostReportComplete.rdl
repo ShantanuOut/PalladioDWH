@@ -19,7 +19,7 @@
                 <Value>=Parameters!paramIncTDS.Value</Value>
               </Parameter>
             </Parameters>
-            <Top>1.18745cm</Top>
+            <Top>0.68474cm</Top>
             <Left>0.3937cm</Left>
             <Height>4.425cm</Height>
             <Width>7.5cm</Width>
@@ -42,7 +42,7 @@
                 <Value>=Parameters!paramIncTDS.Value</Value>
               </Parameter>
             </Parameters>
-            <Top>6.32037cm</Top>
+            <Top>5.57954cm</Top>
             <Left>0.3937cm</Left>
             <Height>7.6cm</Height>
             <Width>9.21979cm</Width>
@@ -54,10 +54,10 @@
             </Style>
           </Subreport>
         </ReportItems>
-        <Height>6in</Height>
+        <Height>5.3in</Height>
         <Style />
       </Body>
-      <Width>4.5in</Width>
+      <Width>4in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
