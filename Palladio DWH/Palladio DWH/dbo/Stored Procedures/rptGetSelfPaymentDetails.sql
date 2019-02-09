@@ -1,6 +1,8 @@
 ﻿CREATE PROCEDURE [dbo].[rptGetSelfPaymentDetails]
 	@AgrChrg	BIT,
-	@MainChrg	BIT
+	@MainChrg	BIT,
+	@TDSSep		BIT,
+	@SelfPayee	BIT = 1
 AS
 BEGIN
 
@@ -8,8 +10,10 @@ BEGIN
 		d.[Date],
 		dp.PayeeType,
 		dmt.PaymentMethod,
-		CASE WHEN dpt.PaymentType = 'TDS'
-			 THEN 'TDS Adjusted to Agreement Cost'
+		CASE WHEN dpt.PaymentType = 'TDS' AND @TDSSep = 0
+			 THEN 'TDS - Adjusted to Agreement Cost'
+			 WHEN dpt.PaymentType = 'TDS' AND @TDSSep = 1
+			 THEN 'Agreement Cost'
 			 ELSE dpt.PaymentType
 		END AS PaymentType,
 		dps.StageCompletion,
@@ -28,7 +32,10 @@ BEGIN
 		ON d.DateKeyId = fqc.DateKeyId
 	INNER JOIN dbo.dimPaymentSchedule dps
 		ON dps.PaymentScheduleId = fqc.PaymentScheduleId
-	WHERE dp.PayeeType = 'Self'
+	WHERE dp.PayeeType = CASE WHEN @SelfPayee = 1
+							 THEN 'Self'
+							 ELSE 'HFL'
+						 END
 	AND dpt.PaymentType <> CASE @AgrChrg WHEN 0
 										 THEN 'Agreement Registration'
 										 ELSE ''
